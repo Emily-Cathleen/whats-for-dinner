@@ -17,24 +17,63 @@ red - #ee5253
   font-family: 'Roboto', sans-serif;
 }
 
-.header-style {
+.navbar {
   display: flex;
+  justify-content: space-between;
   background: #0fb9b1;
-  height: 60px
 }
 
 .title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  margin-left: 18px;
-  padding-top: 5px;
+  margin: 20px;
+  font-size: 21px;
+  font-weight: bold;
+
 }
 
-
 .add-a-recipe-button {
-  background: rgba(225, 225, 225, .9);
-  border: 1px solid black;
-  margin-left: 75%
+  margin: 20px;
+  margin-left: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0px;
+  box-shadow: 5px 10px 18px #0a0909;
+}
+
+.add-a-recipe-button:active {
+transform: scale(0.98);
+box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.view-favorites-button {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0px;
+  box-shadow: 5px 10px 18px #0a0909;
+}
+
+.view-favorites-button:active {
+transform: scale(0.98);
+box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+/* ---- button styling ---- */
+
+
+.lets-cook-button{
+  margin: 0px;
+  border-radius: 5px;
+  border: 0px;
+  padding: 8px 40px;
+  background-color: #0fb9b1;
+  font-size: 18px;
+  margin-top: 1vw;
+  box-shadow: 5px 10px 18px #0a0909;
+}
+
+.lets-cook-button:active {
+transform: scale(0.98);
+box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 /* ------- Two box section ------- */
@@ -45,7 +84,9 @@ red - #ee5253
 }
 
 .looking-for {
-
+  padding-bottom: 3.5vw;
+  font-size: 27px;
+  font-weight: bold;
 }
 
 .star {
@@ -54,64 +95,163 @@ red - #ee5253
 
 .first-box,
 .second-box {
+  display: flex;
   margin-left: 0%;
   margin-top: 3%;
   height: 350px;
   width: 400px;
   background-color: rgba(225, 225, 225, .9);
-  /* border: 5px solid pink */
-}
-
-.second-box {
-  display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-direction: column;
+  padding: 5%;
+  position: relative;
 }
 
 .first-box {
-  /* padding-left: 10% */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .pot-image {
-  height: 20%;
+  max-width: 40%;
+  padding:
 }
 
 /* ---- Form Buttons ---- */
 
 .recipe-form {
   font-family: 'Roboto', sans-serif;
+  padding-right: 10%;
 }
 
-.side-button {
+.style {
+  padding-bottom: 1vw;
+  font-size: 19px;
 
+}
+.side-button {
+  padding-bottom: 1vw;
+  font-size: 19px;
 }
 
 .main-dish-button {
-
+  padding-bottom: 1vw;
+  font-size: 19px;
 }
 
 .dessert-button {
-
+  padding-bottom: 1vw;
+  font-size: 19px;
 }
 
 .entire-meal-button {
-
-}
-
-.hidden {
-  display: none;
+  padding-bottom: 1vw;
+  font-size: 19px;
 }
 
 .food-text {
-
+  font-size: 44px;
+  font-weight: bold;
+  text-align: center!important;
 }
 
-.you-should-make {
+.you-should-make-text {
+  font-size: 23px;
   font-style: italic;
 }
 
 .dishes {
   font-weight: bold;
   font-size: 20px;
+}
+
+.favorite-button {
+  margin: 0px;
+  border-radius: 5px;
+  border: 0px;
+  padding: 8px 40px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  margin-left: 2vw;
+  margin-bottom: 1vw;
+  box-shadow: 5px 10px 18px #0a0909;
+}
+
+.favorite-button:active {
+transform: scale(0.98);
+box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.clear-button {
+  margin-right: 2vw;
+  margin-bottom: 1vw;
+  border-radius: 5px;
+  border: 0px;
+  padding: 8px 40px;
+  margin-top: 10px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #95a5a6;
+  box-shadow: 5px 10px 18px #0a0909;
+}
+
+.clear-button:active {
+transform: scale(0.98);
+box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+/*----- Favorite Recipe Section ---- */
+
+.favorite-recipes-view {
+  display: flex;
+  justify-content: space-around;
+}
+
+.saved-recipes-section {
+  display: flex;
+  margin-left: 0%;
+  margin-top: 3%;
+  height: 350px;
+  width: 400px;
+  background-color: rgba(225, 225, 225, .9);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5%;
+  position: relative;
+}
+
+.recipe-list {
+  margin-bottom: 15px;
+  font-size: 21px;
+  text-align: center!important;
+  border: solid 2px white;
+  border-radius: 8px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.radio-button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-button {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0px;
+  box-shadow: 5px 10px 18px #0a0909;
+
+}
+
+.hidden {
+  display: none;
 }
