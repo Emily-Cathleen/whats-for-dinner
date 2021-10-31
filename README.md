@@ -39,6 +39,8 @@ Add the ability to delete a recipe (ie: when a recipe shows up, show a button th
 
 ## Deployed Link
 
+ Click [Here](https://emily-cathleen.github.io/whats-for-dinner/)
+
 ## Home Page View
 ![Screen Shot 2021-10-31 at 5 51 23 PM](https://user-images.githubusercontent.com/18310532/139602394-e5acf54e-cc4e-4631-bd31-d6e8b74075c4.png)
 
